@@ -1,5 +1,7 @@
 project name: Electronical Lab Book
+
 created by: Arlo Gittings
+
 description:
     A small useful computer that has a few requirements:
     
