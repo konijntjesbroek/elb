@@ -1,0 +1,38 @@
+basic install using ubuntu-mate 18.04 on a raspbery pi 4:
+    apt install dictd                // dictionary server
+    apt install dict-gcide           // english language dictionary
+    apt install dict-foldoc          // free on-line dictionary of coputing
+    apt install dict-jargon          // the jargon file
+    apt install dict-vera            // the Virtual Entity of Relevant Acronyms
+    apt install dict-wn              // the word net dictionary
+    apt install dict-moby-thesaurus  // fails, package not found
+    snap install dict-moby-thesaurus // fails, package not found
+    apt search moby                  // no results
+    apt install dictfmt              // the dict file formatter
+    apt install dict                 // userspace lookup tool
+    
+Basic running:
+    dictd 
+    dict <word>                     // confirmed working
+    mate-dictionary                 // mate desktop provided by mate-utils
+        edit -> preferences         // confirmed working   
+        click add
+        set title
+        set address to 127.0.0.1
+
+Setting locale:
+    localectl list-locales          // this will show available locales
+    dictd --locale <locale>         
+
+Setting up server for remote connection:
+    apt install net-tools           // needed net-tools to make sure it is 
+                                    // working for remote connections.
+    dictd --locale <locale> --listen <IP address>
+    netstat -an                     // shows litening
+    dict -h <IP address> <word>     // fails with access denied on localhost
+    dict -h 127.0.0.1 <word>        // works
+
+Useful Links:
+    https://aur.archlinux.org/packages/?O=0&K=dictd          // list of dicts
+    https://ubuntuforums.org/archive/index.php/t-145949.html // 
+
