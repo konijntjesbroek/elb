@@ -1,4 +1,4 @@
-project name: Electronical Lab Book
+Project name: Electronical Lab Book
 
 created by: Arlo Gittings
 
