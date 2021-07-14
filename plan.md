@@ -57,10 +57,10 @@ appealing.
 		- HVAC/Refrigeration
 		- Appliances
 - Streamlined data entry
-	- simple method to collect ideas
+	- simple method to collect ideas (widd)
 	- method to review and organize notes and ideas
 	- long term method for storage of active projects
-	- off device storage of backups
+	- off device storage of backups?
 - Tools
 	- Creation, editing, viewing of media
 		- nvim
@@ -86,6 +86,19 @@ appealing.
 		- Weather
 		- Network testing 
 		- Pen Testing
+		- logging suite
+			- logit 
+				- journaling application that takes key observational data, 
+				  builds a header/footer out of it automatically.
+				- concatenates older journals monthly and stores them as a pdf.
+			- workit
+				- granular activity tracker
+				- allows for scheduling repeated tasks
+				- integrated hooks for reviewing, 
+				- key is minimal flow interruption during daily work, secondary
+				  factor is making audit work simple.
+			- eatit
+				- granual food tracker.
 	- Communications
 		- Radio
 		- Text based
